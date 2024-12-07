@@ -1,0 +1,50 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contact Card Container */
+  .contact-card {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Contact Card Header */
+  .contact-card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Contact Info Paragraph */
+  .contact-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Style for Info Sections */
+  .contact-card .info {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .contact-card .info span {
+    font-weight: normal;
+    color: #333;
+  }
+  
+  /* Email and Phone Styling */
+  .contact-card .email,
+  .contact-card .phone {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
