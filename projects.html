@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
+    <title>Projects - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="lightbox.js"></script>
-
+    <script src="lightbox.js"></script>
 </head>
 
 <body>
@@ -25,28 +24,34 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="wolfram.html">Wolfram</a></li>
                 </ul>
-                <button class="hamburger">
-                    ☰
-                </button>
             </div>
         </nav>
     </header>
-    <div class="paddingtop">
-        <h1 class="text-center">Welcome to My Portfolio</h1>
-        <p class="text-center">Explore the projects I've worked on and learn more about my work!</p>
-    </div>
-    </div>
+
     <main>
-        <section class="text-center">
-            <h2>About Me</h2>
-            <p class="paddingsides">
-                I'm passionate about web development, Raspberry Pi projects, and outdoor rock climbing. Below are some
-                of the projects I've built. I like to take things appart and put them back together.
-            </p>
+        <section>
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Text Encoder project</h3>
+                    <p>I built this app during the summer of 2022 before my First year in the iCan program at heritage,
+                        to get a little knowledge of things we would be doing in the program.</p>
+                    <a href="https://encoder-project.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project and its features.</p>
+                    <a href="https://github.com/yourproject1" target="_blank" class="btn primary">View Code</a>
+                    <a href="https://example.com/demo" target="_blank" class="btn secondary">View Demo</a>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
         </section>
     </main>
 
-    <footer class="paddingtop, text-center">
+    <footer class=" text-center">
         <p>&copy; 2024 Xavier Voet | <a href="mailto:voet.xavier@gmail.com">Contact Me</a></p>
     </footer>
 </body>

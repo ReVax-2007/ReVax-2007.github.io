@@ -1,8 +1,205 @@
-li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+/* General Navbar Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .brand-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Mobile Hamburger Button */
+  .hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 100%;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  /* General Page Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Projects Section */
+  section {
+    margin: 40px;
+  }
+  
+  .project {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    color: #00bcd4;
+  }
+  
+  .project p {
+    font-size: 1.1em;
+  }
+  
+  .project a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  .project .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project .btn:hover {
+    background-color: #0288d1;
+  }
+  
+  /* Carousel Images */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project .carousel-container {
+    margin-bottom: 30px;
+  }
+  
+  /* Optional: Add some margin around the carousel */
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Project Layout */
+  @media (min-width: 768px) {
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+/* Ensure the images in the carousel are responsive and have proper spacing */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* You can adjust this value */
 }
-#ul {
-    background-color: lightgrey;
-    border: .5px solid black;
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000; /* Make the arrows more visible */
 }
+
+/* Set styles for the lightbox images */
+/* Apply a zoom effect on hover for images */
+.bs5-lightbox .lightbox-item img {
+    transition: transform 0.3s ease;
+}
+
+.bs5-lightbox .lightbox-item img:hover {
+    transform: scale(1.5); /* Adjust the zoom level */
+}
+
+
+/* Optional: Ensure carousel buttons are easily clickable */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1; /* Ensure buttons are on top of the images */
+}
+  
