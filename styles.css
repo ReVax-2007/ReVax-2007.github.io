@@ -1,4 +1,25 @@
 /* General Navbar Styling */
+html, 
+body {
+    height: 100%;
+}
+html, body {
+  height: 100%; /* Makes sure both the html and body tags span the full height */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #b0e3e5, #64bbbf);
+  background-size: cover; /* Ensures the gradient scales to fit the viewport */
+  background-attachment: fixed; /* Locks the gradient in place */
+}
+
+body {
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  margin: 0; /* Remove any default margin */
+  display: flex; /* Optional: Flexbox for alignment */
+  flex-direction: column; /* Ensure content stacks vertically */
+  background: linear-gradient(to bottom, #b0e3e5, #64bbbf); /* Replace with your gradient */
+  background-attachment: fixed; /* Make the gradient fixed */
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,7 +27,8 @@ body {
   
   .navbar {
     background-color: #333;
-    padding: 10px 20px;
+    width: 100%;
+    /* padding: 10px 20px; */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -101,7 +123,7 @@ body {
   
   /* Projects Section */
   section {
-    margin: 40px;
+    margin: 20px;
   }
   
   .project {
@@ -202,4 +224,6 @@ body {
 .carousel-control-prev, .carousel-control-next {
     z-index: 1; /* Ensure buttons are on top of the images */
 }
-  
+.grad1 {
+  background-image: linear-gradient(#b0e3e5, #64bbbf);
+}
