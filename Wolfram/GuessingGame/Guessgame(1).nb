@@ -1,0 +1,143 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4732,        135]
+NotebookOptionsPosition[      3753,        111]
+NotebookOutlinePosition[      4155,        127]
+CellTagsIndexPosition[      4112,        124]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"random", "=", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "100"}], "}"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Print", "[", "\"\<Guess a number between 0 and 100!\>\"", "]"}], 
+   ";"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"While", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"guess", "=", 
+        RowBox[{
+        "Input", "[", "\"\<Guess a number between 0 and 100\>\"", "]"}]}], 
+       ")"}], "!=", "random"}], " ", ",", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"guess", "<", "random"}], ",", 
+       RowBox[{"Print", "[", "\"\<Too low!\>\"", "]"}], ",", 
+       RowBox[{"Print", "[", "\"\<Too high!\>\"", "]"}]}], "]"}]}], "]"}], 
+   ";"}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<You got it, congrats! The number was: \>\"", ",", "random"}],
+     "]"}], ";"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{"\t\t"}]}], "Input",
+ CellChangeTimes->{{3.9455264458300743`*^9, 3.9455264599497337`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"5193faa8-4bb7-9e43-9747-62def1513c18"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Guess a number between 0 and 100!\"\>"], "Print",
+ CellChangeTimes->{{3.945526414440325*^9, 3.94552642016588*^9}, 
+   3.9455264621888256`*^9, 3.945527875797674*^9, {3.9455279238969917`*^9, 
+   3.945527931924135*^9}},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"997eeaf3-60ab-3b4d-81dd-f2a6896bcb6f"],
+
+Cell[BoxData["\<\"Too high!\"\>"], "Print",
+ CellChangeTimes->{{3.945526414440325*^9, 3.94552642016588*^9}, 
+   3.9455264621888256`*^9, 3.945527875797674*^9, {3.9455279238969917`*^9, 
+   3.9455279358100815`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"de049eb0-7eeb-c447-b076-4938b52b4638"],
+
+Cell[BoxData["\<\"Too high!\"\>"], "Print",
+ CellChangeTimes->{{3.945526414440325*^9, 3.94552642016588*^9}, 
+   3.9455264621888256`*^9, 3.945527875797674*^9, {3.9455279238969917`*^9, 
+   3.945527937550707*^9}},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"d18a741d-267d-374a-9943-8054b3a39e85"],
+
+Cell[BoxData["\<\"Too low!\"\>"], "Print",
+ CellChangeTimes->{{3.945526414440325*^9, 3.94552642016588*^9}, 
+   3.9455264621888256`*^9, 3.945527875797674*^9, {3.9455279238969917`*^9, 
+   3.945527939210472*^9}},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"8146e6d9-5f78-c741-a980-8439d1deae73"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"You got it, congrats! The number was: \"\>", 
+   "\[InvisibleSpace]", "9"}],
+  SequenceForm["You got it, congrats! The number was: ", 9],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.945526414440325*^9, 3.94552642016588*^9}, 
+   3.9455264621888256`*^9, 3.945527875797674*^9, {3.9455279238969917`*^9, 
+   3.9455279413384876`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"3f48e096-83cd-6b4e-8eea-0f0229a19f3d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.945527923875004*^9, 
+  3.945527927361988*^9}},ExpressionUUID->"211f0e5c-4f7e-6346-96c4-\
+a47d9e2d087a"]
+},
+WindowSize->{960, 472},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ef321e33-8594-7c42-9bf7-6ba65bd866f9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 1187, 33, 180, "Input",ExpressionUUID->"5193faa8-4bb7-9e43-9747-62def1513c18"],
+Cell[CellGroupData[{
+Cell[1788, 59, 338, 6, 22, "Print",ExpressionUUID->"997eeaf3-60ab-3b4d-81dd-f2a6896bcb6f"],
+Cell[2129, 67, 316, 6, 22, "Print",ExpressionUUID->"de049eb0-7eeb-c447-b076-4938b52b4638"],
+Cell[2448, 75, 314, 6, 22, "Print",ExpressionUUID->"d18a741d-267d-374a-9943-8054b3a39e85"],
+Cell[2765, 83, 313, 6, 22, "Print",ExpressionUUID->"8146e6d9-5f78-c741-a980-8439d1deae73"],
+Cell[3081, 91, 489, 11, 22, "Print",ExpressionUUID->"3f48e096-83cd-6b4e-8eea-0f0229a19f3d"]
+}, Open  ]]
+}, Open  ]],
+Cell[3597, 106, 152, 3, 28, "Input",ExpressionUUID->"211f0e5c-4f7e-6346-96c4-a47d9e2d087a"]
+}
+]
+*)
+
